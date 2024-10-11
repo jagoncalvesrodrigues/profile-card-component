@@ -3,7 +3,8 @@
 }
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Kumbh Sans", serif;
+    background-color: #148999;
 }
 img{
     display: block;
@@ -18,4 +19,86 @@ ul{
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+}
+p{ 
+    margin: 0;
+}
+.main{
+    position: relative;
+   
+}
+.card{
+    width: 326px; 
+    height: 374px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    margin: auto;
+    margin-top: 30%;
+    overflow: hidden;
+    position: relative;
+    isolation: isolate;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+}
+.img-profile{
+    margin-top: 75px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+}
+.background-card{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+.info::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #979797;
+    margin-top: 80px;
+    opacity: 0.3;
+}
+.city{
+    margin: 8px;
+}
+.stats{
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.s-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.numbers-stats, .name{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #2E3349;
+} 
+.age, .info-stats, .city{
+    color: #6B7082;
+    font-weight: 400;
+    font-style: normal;
+}
+.age{
+    font-size: 18px;
+}
+.city{
+    font-size: 14px;
+}
+.info-stats{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-top: 5px;
 }
